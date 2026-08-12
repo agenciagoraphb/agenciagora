@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Agora - Nossos Projetos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="fivicon.png">
+</head>
+
+<body>
+     <!-- Overlay da Barra Lateral Mobile -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+   <aside class="mobile-sidebar" id="mobileSidebar">
+    <!-- Header com Logo Maior e Botão Fechar -->
+    <div class="mobile-sidebar-header">
+        <img src="agenciagora.png" alt="Agência Agora" class="mobile-sidebar-logo">
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Fechar Menu">&times;</button>
+    </div>
+
+    <!-- Navegação Posicionada Logo Abaixo da Logo -->
+    <nav class="mobile-sidebar-nav">
+        <a href="index.html"><span>Home</span> &rarr;</a>
+        <a href="servicos.html"><span>Serviços</span> &rarr;</a>
+        <a href="projetos.html"class="active"><span>Projetos</span> &rarr;</a>
+        <a href="sobre.html"><span>Sobre</span> &rarr;</a>
+    </nav>
+</aside>
+
+    <div class="top-header">
+        <div class="grid-container">
+            <span class="left-text">Foco e satisfação do cliente, através de inovação e marketing.</span>
+            <div class="right-info">
+                <span>(86) 98152-4100</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/agenciagora?igsh=MWtubXdjNmk0bHZkbQ=="> <img src="iconinstagram.png" alt="Instagram"> </a> 
+                <a href="https://www.facebook.com/share/1BSztatVDZ/?mibextid=wwXIfr"> <img src="iconface.png" alt="Facebook"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-servicos-wrapper">
+        <section class="hero-container-servicos">
+
+            <header class="main-header">
+                <div class="grid-container flex-header">
+                    <img src="agenciagora.png" alt="Agência Agora" class="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="projetos.html" class="active">Projetos</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Botão hambúrguer mobile -->
+                <button class="mobile-toggle-btn" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                </div>
+            </header>
+
+            <main class="main-servicos">
+                <div class="grid-container">
+                    <div class="servicos-hero-content">
+                        <h1 class="servicos-titulo">
+                            <span class="weight-medium">Nossos</span>
+                            <span class="weight-extrabold color-orange">Projetos</span>
+                        </h1>
+
+                        <p class="servicos-subtitulo">
+                             <span class="weight-bold">Resultados</span> Resultados reais, histórias de sucesso
+                            e parceiros que geram transfomação
+                        </p>
+                    </div>
+                </div>
+            </main>
+
+        </section>
+    </div>
+    <!-- SEÇÃO PRINCIPAL DE PROJETOS -->
+<section class="section-projetos">
+    <div class="grid-container">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="projetos-header">
+            <h1 class="projetos-titulo">Projetos que geram impacto<br>e impulsionam <span class="color-orange">negócios</span>.</h1>
+            <p class="projetos-subtitulo">Cada projeto é desenvolvido com estratégia, criatividade e foco em resultados. Conheça alguns dos trabalhos que já transformaram marcas</p>
+        </div>
+
+        <!-- Botões de Filtragem (169px x 45px | Corner 5) -->
+        <div class="projetos-filtros">
+            <button class="btn-filtro active" data-filter="todos">Todos</button>
+            <button class="btn-filtro" data-filter="branding">Branding</button>
+            <button class="btn-filtro" data-filter="redes-sociais">Redes Sociais</button>
+            <button class="btn-filtro" data-filter="sites">Sites</button>
+            <button class="btn-filtro" data-filter="conteudo">Conteúdo</button>
+        </div>
+
+        <!-- Grid de Projetos (6 Cards - 2 Fileiras de 3 | 303.23px x 450px) -->
+        <div class="projetos-grid" id="projetosGrid">
+            
+            <!-- CARD 1 - Branding -->
+            <div class="projeto-card" data-category="branding">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Branding</span>
+                    <!-- Insira sua imagem no src abaixo -->
+                    <img src="fisiolife.png" alt="FisioLife" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">FisioLife</h3>
+                    <p class="projeto-descricao">Identidade visual completa e posicionamento de mercado.</p>
+                    <a href="https://www.instagram.com/fisiolife.phb/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 - Branding -->
+            <div class="projeto-card" data-category="branding">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Branding</span>
+                    <img src="milalacos.png" alt="Vereadora Neta" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">Mila Laços</h3>
+                    <p class="projeto-descricao">Identidade visual completa e posicionamento de mercado.</p>
+                    <a href="https://www.instagram.com/milalacosphb/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 - Redes Sociais -->
+            <div class="projeto-card" data-category="redes-sociais">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Social Media</span>
+                    <img src="neta.png" alt="Projeto Redes" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">Neta Castelo Branco</h3>
+                    <p class="projeto-descricao">Gestão de redes sociais e produção de conteúdo estético.</p>
+                    <a href="https://www.instagram.com/netacastelobranco/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 4 - Sites -->
+            <div class="projeto-card" data-category="sites">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Sites</span>
+                    <img src="cirandadosaber.png" alt="Projeto Sites" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">Ciranda do Saber</h3>
+                    <p class="projeto-descricao">Desenvolvimento de Landing Page de alta conversão.</p>
+                    <a href="https://ebcirandadosaber.com/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 5 - Conteúdo -->
+            <div class="projeto-card" data-category="conteudo">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Conteúdo</span>
+                    <img src="parnaibaagora.png" alt="Projeto Conteúdo" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">Parnaíba Agora</h3>
+                    <p class="projeto-descricao">Produção de material rico e estratégia de inbound marketing.</p>
+                    <a href="https://www.instagram.com/parnaibagora/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 6 - Sites -->
+            <div class="projeto-card" data-category="conteudo">
+                <div class="projeto-img-wrapper">
+                    <span class="projeto-tag">Conteúdo</span>
+                    <img src="resenhafemme.png" alt="Projeto Conteúdo" class="projeto-img">
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-nome">Resenha Femme</h3>
+                    <p class="projeto-descricao">Produção de material rico e estratégia de inbound marketing.</p>
+                    <a href="https://www.instagram.com/resenhafemmephb/" class="projeto-link">
+                        Saiba mais 
+                        <svg class="projeto-seta" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="metricas-banner">
+            
+            <div class="metrica-item">
+                <div class="metrica-icon-container">
+                    <img src="1.png" alt="Ícone Projetos" class="metrica-icon-img">
+                </div>
+                <div class="metrica-texto">
+                    <h4 class="metrica-numero" data-target="150" data-prefix="+">+0</h4>
+                    <p class="metrica-subtitulo">Projetos Entregues</p>
+                </div>
+            </div>
+
+            <div class="metrica-item">
+                <div class="metrica-icon-container">
+                    <img src="2.png" alt="Ícone Clientes" class="metrica-icon-img">
+                </div>
+                <div class="metrica-texto">
+                    <h4 class="metrica-numero" data-target="100" data-prefix="+">+0</h4>
+                    <p class="metrica-subtitulo">Clientes Atendidos</p>
+                </div>
+            </div>
+
+            <div class="metrica-item">
+                <div class="metrica-icon-container">
+                    <img src="3.png" alt="Ícone Satisfação" class="metrica-icon-img">
+                </div>
+                <div class="metrica-texto">
+                    <h4 class="metrica-numero" data-target="98" data-suffix="%">0%</h4>
+                    <p class="metrica-subtitulo">Satisfação</p>
+                </div>
+            </div>
+
+            <div class="metrica-item">
+                <div class="metrica-icon-container">
+                    <img src="4.png" alt="Ícone Resultados" class="metrica-icon-img">
+                </div>
+                <div class="metrica-texto">
+                    <h4 class="metrica-numero" data-target="300" data-prefix="+" data-suffix="%">+0%</h4>
+                    <p class="metrica-subtitulo">Resultados</p>
+                </div>
+            </div>
+            
+        </div>
+            
+        </div>
+
+    </div>
+</section>
+<!-- NOVA SEÇÃO: BANNER INSPIRACIONAL (SALA) -->
+    <section class="section-banner-sala">
+        <div class="banner-sala-overlay">
+            <div class="banner-vazado-laranja">
+                <div class="foguete-elipse">
+                    <!-- Ícone do foguete (pode ser uma imagem svg ou png) -->
+                    <img src="foguete.png" alt="Foguete" class="foguete-icon">
+                </div>
+                <div class="banner-sala-content">
+                    <h2 class="banner-sala-titulo">Pronto para <span class="text-orange-bold">transformar</span> os seus resultados?</h2>
+                    <p class="banner-sala-subtitulo">Fale com um dos nossos especialistas e mude o rumo do seu negócio hoje mesmo.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5586981524100" target="_blank" class="btn-banner-sala">Fale conosco</a>
+            </div>
+        </div>
+    </section>
+    <!-- Seção Rodapé (Footer) -->
+<footer class="main-footer">
+    <div class="grid-container">
+        <div class="footer-columns">
+            
+            <!-- Coluna 1: Logo, Frase Institucional e Redes -->
+            <div class="footer-col col-brand">
+                <img src="agenciagora.png" alt="Agência Agora" class="footer-logo">
+                <p class="footer-tagline">Sua parceira para o sucesso digital. Inovação e resultados em um só lugar.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/agenciagora?igsh=MWtubXdjNmk0bHZkbQ=="><img src="iconinstagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/share/1BSztatVDZ/?mibextid=wwXIfr"><img src="iconface.png" alt="Facebook"></a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Links Úteis -->
+            <div class="footer-col col-links">
+                <h4 class="footer-title">Links úteis</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato Direto com Linkagens Ativas -->
+            <div class="footer-col col-contact">
+                <h4 class="footer-title">Contato Direto</h4>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5586981524100" target="_blank">
+                            <img src="iconwathsaap.png" alt="Telefone" class="contact-icon"> 
+                            (86) 98152-4100
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:agenciagoraphb@gmail.com">
+                            <img src="iconemail.png" alt="E-mail" class="contact-icon"> 
+                            <span class="email-bold">agenciagoraphb@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.google.com/?q=Rua+Dos+Araujos,+157+-+Parnaiba+-+Pi" target="_blank">
+                            <img src="iconloc.png" alt="Endereço" class="contact-icon"> 
+                            Rua dos Araujos, 157 - Parnaíba - Pi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: CTA Pronto para Crescer -->
+            <div class="footer-col col-cta">
+                <h4 class="footer-title">Pronto para Crescer?</h4>
+                <p class="cta-text">Entre em contato e descubra a melhor forma de impulsionar seu negócio.</p>
+                <a href="https://api.whatsapp.com/send?phone=5586981524100" target="_blank" class="btn-footer-solicitar">Solicitar Proposta</a>
+            </div>
+
+        </div>
+
+        <!-- Linha da Marca D'água / Direitos Autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agência agora. Todos os direitos reservados | Privacidade</p>
+        </div>
+    </div>
+</footer>
+</body>
+ <script src="script.js"></script>
+</html>
